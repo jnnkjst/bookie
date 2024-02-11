@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Data;
 
-public class DataContext : DbContext
+public class BookContext : DbContext
 {
-    public DataContext(DbContextOptions<DataContext> options) : base(options)
+    public BookContext(DbContextOptions<BookContext> options) : base(options)
     {
     }
 
@@ -13,6 +13,6 @@ public class DataContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Book>().ToTable("Book");
+        modelBuilder.Entity<Book>().ToTable("books");
     }
 }

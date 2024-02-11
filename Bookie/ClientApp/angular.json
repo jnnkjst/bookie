@@ -132,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "Bookie"
+  "defaultProject": "Bookie",
+  "cli": {
+    "analytics": false
+  }
 }

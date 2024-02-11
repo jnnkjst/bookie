@@ -1,5 +1,7 @@
-﻿using DataAccess.Models;
+﻿using DataAccess.Data;
+using DataAccess.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Bookie.Controllers;
 
@@ -7,16 +9,29 @@ namespace Bookie.Controllers;
 [Route("[controller]")]
 public class BookController : ControllerBase
 {
-    private readonly ILogger<BookController> _logger;
+    private readonly BookContext _bookContext;
 
-    public BookController(ILogger<BookController> logger)
+    public BookController(BookContext bookContext)
     {
-        _logger = logger;
+        _bookContext = bookContext;
     }
 
     [HttpGet]
-    public IEnumerable<Book> Get()
+    public async Task<IEnumerable<Book>> Get()
     {
-        throw new Exception();
+        return await _bookContext.Books.AsQueryable().ToListAsync();
+    }
+
+    [HttpDelete]
+    public async void Delete(Guid bookId)
+    {
+        var book = await _bookContext.FindAsync<Book>(bookId);
+
+        if (book == null)
+        {
+            throw new Exception();
+        }
+
+        _bookContext.Books.Remove(book);
     }
 }

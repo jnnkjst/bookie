@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookie", "Bookie\Bookie.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{7ED14B99-D28B-46B8-83D4-28C638AF7929}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookie.BackupSystems", "Bookie.BackupSystems\Bookie.BackupSystems.csproj", "{3FE94043-F3E8-4D82-A0C0-A4A77BD110ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{7ED14B99-D28B-46B8-83D4-28C638AF7929}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ED14B99-D28B-46B8-83D4-28C638AF7929}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7ED14B99-D28B-46B8-83D4-28C638AF7929}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FE94043-F3E8-4D82-A0C0-A4A77BD110ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FE94043-F3E8-4D82-A0C0-A4A77BD110ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FE94043-F3E8-4D82-A0C0-A4A77BD110ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FE94043-F3E8-4D82-A0C0-A4A77BD110ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

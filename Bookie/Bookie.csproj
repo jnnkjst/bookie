@@ -23,6 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Bookie.BackupSystems\Bookie.BackupSystems.csproj" />
       <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
     </ItemGroup>
 

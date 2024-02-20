@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-link {
+  width: 150px;
+  height: 150px;
+  font-size: 150%;
+}

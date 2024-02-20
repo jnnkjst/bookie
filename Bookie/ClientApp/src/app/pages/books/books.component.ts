@@ -1,15 +1,14 @@
 import {Component} from '@angular/core';
 import {Observable} from "rxjs";
-import {ApiClientService} from "../api-client/api-client.service";
-import {Book} from "../models/book";
+import {Book} from "../../models/book";
+import {ApiClientService} from "../../api-client/api-client.service";
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
+  templateUrl: './books.component.html',
 })
-export class HomeComponent {
+export class BooksComponent {
   public books: Observable<Book[]>;
-
 
   constructor(private apiClient: ApiClientService) {
     this.books = apiClient.get("book");

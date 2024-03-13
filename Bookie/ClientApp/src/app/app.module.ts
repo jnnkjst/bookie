@@ -7,7 +7,6 @@ import {AppComponent} from './app.component';
 import {NavMenuComponent} from './pages/nav-menu/nav-menu.component';
 import {FetchDataComponent} from './pages/fetch-data/fetch-data.component';
 import {BookComponent} from './components/book/book.component';
-import {BookListComponent} from './components/book-list/book-list.component';
 import {provideAnimationsAsync} from '@angular/platform-browser/animations/async';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatCardModule} from "@angular/material/card";
@@ -19,7 +18,6 @@ import {ToolbarComponent} from "./components/toolbar/toolbar.component";
   declarations: [
     AppComponent,
     NavMenuComponent,
-    BookListComponent,
     FetchDataComponent,
     BookComponent,
     BooksComponent,

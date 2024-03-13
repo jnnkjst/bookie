@@ -27,7 +27,7 @@ public class FileBackup
     private string GetFileName(Book book)
     {
         var extension = Path.GetExtension(book.FilePath);
-        return BackupDirectory + "\\" + book.Title + extension;
+        return BackupDirectory + "\\" + book.Metadata.Title + extension;
     }
 
     private static void MoveFile(string path, string destinationPath)

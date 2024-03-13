@@ -1,6 +1,8 @@
+import {BookMetadata} from "./bookMetadata";
+
 export interface Book {
   id: number;
   isbn: number;
-  metadata: any;
+  metadata: BookMetadata;
   filePath: string;
 }
